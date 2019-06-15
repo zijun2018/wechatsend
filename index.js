@@ -131,7 +131,7 @@ async function main() {
   let weather = await superagent.getWeather() //获取天气信息
   let today = await untils.formatDate(new Date())//获取今天的日期
   let memorialDay = untils.getDay(config.MEMORIAL_DAY)//获取纪念日天数
-  let str = today +  '<br>我们在一起的第' + memorialDay + '天<br>'+ '<br>啦啦啦，生日快乐哟！^_^<br>'
+  let str = today +  '<br>我们在一起的第' + memorialDay + '天<br>'+ '<br>啦啦啦，今天一定要元气满满哦！^_^<br>'
     + '<br>今日南昌天气<br>' + weather.weatherTips +'<br>' +weather.todayWeather+ '<br>想跟你说:<br>'+one+'<br><br>'+'———————最爱你的D。先生'
   try{
     logMsg = str
